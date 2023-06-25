@@ -4,7 +4,7 @@ class Busqueda:
         self.__ocupacion = ocupacion
         self.__ubicacion = ubicacion
         self.__rangoSalarial = rangoSalarial
-        self.__experiencia = experiencia
+        self.__eexperiencia = experiencia
 
     def filtrarOfertas():
         pass

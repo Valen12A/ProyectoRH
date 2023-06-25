@@ -1,4 +1,4 @@
-from Usuario import Usuario
+from Usuario import *
 
 class Persona(Usuario):
     def __init__(self, tipoUsuario, numDocumento, contraseña, experienciaLaboral, nombre, telefono, email, direccion, situacionOcupacional, estudios, fechaNacimiento):
@@ -11,9 +11,6 @@ class Persona(Usuario):
         self.__situacionOcupacional = situacionOcupacional
         self.__estudios = estudios
         self.__fechaNacimiento = fechaNacimiento
-    
-    def mostrar_persona(self):
-        return f'{self.__experienciaLaboral}, {self.__nombre}, {self.__telefono}, {self.__email}, {self.__direccion}, {self.__situacionOcupacional},{self.__estudios},{self.__fechaNacimiento}'   
 
     def subirHojaVida():
         pass
@@ -24,7 +21,7 @@ class Persona(Usuario):
     def buscarOfertas():
         pass
 
-    def inscribirOfertas():
+    def incribirOfertas():
         pass
 
     def restablecerContraseña():
