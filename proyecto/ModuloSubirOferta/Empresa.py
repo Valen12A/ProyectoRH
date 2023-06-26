@@ -8,5 +8,5 @@ class Empresa(Usuario):
         self.__tipoEmpresa = tipoEmpresa
         self.__oferta = []
 
-    def SubirOferta():
+    def SubirOfreta():
         pass
