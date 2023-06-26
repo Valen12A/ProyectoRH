@@ -1,6 +1,6 @@
 class Vacante():
     lista_cargos=[]
-    def __init__(self,id,ocupacion,numVacante,salario,mesesExperiencia,tipoContrato,ubicacion,jornadaTrabajo):
+    def __init__(self,id,ocupaciones,numVacante,salario,mesesExperiencia,tipoContrato,ubicacion,jornadaTrabajo):
         self.__id=id 
         self.__ocupaciones = ocupaciones
         self.__numVacante = numVacante
@@ -67,7 +67,7 @@ class Vacante():
                 if id == 0:
                     break
                 else:
-                    Vacante.agregar_una_vez(Vacante.lista_cargos,Vacante.lista_cargos)
+                    Vacante.agregar_una_vez(Vacante.lista_cargos)
             except ValueError:
                 Vacante.agregar_una_vez(Vacante.lista_cargos, id)
         print(f'la vacante es:{Vacante.lista_cargos}')
