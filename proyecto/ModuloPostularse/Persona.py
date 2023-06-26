@@ -1,6 +1,6 @@
 from Usuario import *
 
-class Persona(Usuario):
+class Persona(usuario):
     def __init__(self, tipoUsuario, numDocumento, contraseña, experienciaLaboral, nombre, telefono, email, direccion, situacionOcupacional, estudios, fechaNacimiento):
         super().__init__(tipoUsuario, numDocumento, contraseña)
         self.__experienciaLaboral = experienciaLaboral
