@@ -26,3 +26,6 @@ class Persona(Usuario):
 
     def restablecerContraseña():
         pass
+
+    def getDatos2(self):
+        return f'{self.__experienciaLaboral},{self.__nombre},{self.__telefono},{self.__email},{self.__direccion},{self.__situacionOcupacional},{self.__estudios},{self.__fechaNacimiento}'

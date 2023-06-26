@@ -9,3 +9,6 @@ class Usuario:
 
     def accederModulos():
         pass
+
+    def getDatos1(self):
+        return f'{self.__tipoUsuario},{self.__numDocumento},{self.__contraseña}'
