@@ -8,3 +8,6 @@ class Vacante():
         self.__tipoContrato = tipoContrato
         self.__ubicacion = ubicacion
         self.__jornadaTrabajo = jornadaTrabajo
+
+    def mostrar_vacante(self):
+        return f'{self.__id}, {self.__ocupacion}, {self.__numVacante}, {self.__salario}, {self.__mesesExperiencia}, {self.__tipoContrato}, {self.__ubicacion}, {self.__jornadaTrabajo}'

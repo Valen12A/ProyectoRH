@@ -4,6 +4,9 @@ class Usuario:
         self.__numDocumento = numDocumento
         self.__contraseña = contraseña
 
+    def mostrar_usuario(self):
+        return f'{self.__tipoUsuario}, {self.__numDocumento}, {self.__contraseña}'
+
     def iniciarSeccion():
         pass
 

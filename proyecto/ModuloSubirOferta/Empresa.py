@@ -8,5 +8,8 @@ class Empresa(Usuario):
         self.__tipoEmpresa = tipoEmpresa
         self.__oferta = []
 
-    def SubirOfreta():
+    def mostrar_empresa(self):
+        return f'{self.__nit}, {self.__email}. {self.__numeroTrabajadores}, {self.__tipoEmpresa}'
+
+    def SubirOferta():
         pass
