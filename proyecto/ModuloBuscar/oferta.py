@@ -1,13 +1,11 @@
 class Oferta:
-    empleo=[]
-    def __init__(self,codigo,empresa,vacantes,numPostulaciones,fechaInicio,fechaCierre):
+    def __init__(self,codigo,empresa,puesto,numPostulaciones,fechaInicio,fechaCierre):
         self.__codigo=codigo
         self.__empresa = empresa
-        self.__vacantes = vacantes
+        self.__puesto = puesto
         self.__numPostulaciones = numPostulaciones
         self.__fechaInicio = fechaInicio
         self.__fechaCierre = fechaCierre
-        Oferta.empleo=[]
     
     def getCodigo(self):
         return self.__codigo
@@ -39,37 +37,8 @@ class Oferta:
     def setFechaCierre(self,fechaCierre):
         self.__fechaCierre=fechaCierre
     
-    # def agregar_una_vez(lista,empleo):
-    #     try:
-    #         if id in Oferta.empleo:
-    #             raise ValueError('Ya hay una oferta con ese id')
-    #         else:
-    #             lista.append(Oferta.empleo)
-    #             return lista
-    #     except ValueError as ve:
-    #         print(f'Error: {ve}')
-
-    # def Ofertas():
-    #     while True:
-    #         id=int(input('Ingrese el id de la oferta:'))
-    #         empresa=input('Ingrese el nombre de la empresa: ')
-    #         vacantes=int(input('Ingrese el numero de vacantes:'))
-    #         numPostulaciones=12
-    #         fechaInicio=(input('Ingrese la fecha de inicio de la vacante: '))
-    #         fechaCierre=(input('Ingrese la fecha de cierre de la vacante: '))
-    #         fin=(input('\n(0 para finalizar):'))
-    #         try:
-    #             id == int(fin)
-    #             if id == 0:
-    #                 break
-    #             else:
-    #                 Oferta.agregar_una_vez(Oferta.empleo,Oferta.empleo)
-    #         except ValueError:
-    #             Ofertas.agregar_una_vez(Oferta.empleo, id)
-    #     print(f'La oferta es {Ofertas.empleo}')
-    #     print()
     def getDatos6(self):
-        return f'{self.__codigo},{self.__empresa},{self.__vacantes},{self.__numPostulaciones},{self.__fechaInicio},{self.__fechaCierre}'
+        return f'{self.__codigo},{self.__empresa},{self.__puesto},{self.__numPostulaciones},{self.__fechaInicio},{self.__fechaCierre}'
     
     def filtrarOferta():
         pass

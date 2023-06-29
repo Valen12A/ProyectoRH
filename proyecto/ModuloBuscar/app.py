@@ -16,9 +16,9 @@ print(usuario.getDatos1())
 print(persona.getDatos2())
 print(empresa.getDatos3())
 print(of1.getDatos6())
+print()
 
 print('1-Agragar Vacante')
-print()
 print('2-Buscar Vacante')
 
 
@@ -26,9 +26,9 @@ while True:
     opcion = int(input('Elija la lista que desea usar: '))
     print()
     if opcion == 1:
-        Vacante.Vacante()
+        Vacante.almacenarVacante(Vacante.lista_cargos)
     elif opcion == 2:
-        Buscar.buscarVacantes(Vacante)
+        Buscar.buscarVacante()
     else:
         print('Ingrese una opcion valida')
 
